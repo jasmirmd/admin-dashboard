@@ -16,8 +16,8 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 3fr;
-  width: 100vw;
-  height: 100vh;
+  min-width: 100vw;
+  min-height: 100vh;
 }
 
 .sidebar {
@@ -136,7 +136,7 @@ body {
   background-color: var(--slate);
   border: none;
   border-radius: 999px;
-  padding: 0.5rem 1.5rem;
+  padding: 1% 3%;
   color: #ffffff;
   font-weight: 600;
 }
@@ -146,14 +146,14 @@ body {
   grid-template-columns: 2fr 1fr;
   background-color: var(--pale-grey);
   z-index: -1;
-  padding: 1rem;
+  padding: 1%;
   gap: 1rem;
 }
 
 .cards {
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 0.6rem;
+  gap: 1%;
 }
 
 .cards > p {
@@ -164,14 +164,14 @@ body {
 .unit-cards {
   display: grid;
   grid-template: 1fr 1fr 1fr / repeat(2, 1fr);
-  gap: 1rem;
+  gap: 2%;
 }
 
 .card {
   display: flex;
   background-color: #ffffff;
   border-radius: 5px;
-  gap: 1rem;
+  gap: 2%;
   box-shadow: 2px 2px 2px 1px rgb(0, 0, 0, 0.1);
 }
 
@@ -179,7 +179,7 @@ body {
   content: ' ';
   display: inline-block;
   height: 100%;
-  width: 18px;
+  width: 8%;
   background-color: #7F8CAF;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -189,13 +189,13 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2%;
 }
 
 .card-icons {
   display: flex;
   justify-content: end;
-  gap: 1rem;
+  gap: 2%;
 }
 
 .card-text p {
@@ -205,14 +205,14 @@ body {
 .cards-info {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 1rem;
+  gap: 2%;
 }
 
 .firstcard,
 .secondcard {
   display: grid;
   grid-template-rows: auto 1fr;
-  gap: 0.5rem;
+  gap: 1%;
 }
 
 .firstcard > p,
@@ -232,7 +232,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2%;
 }
 
 .line {
